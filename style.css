@@ -50,6 +50,7 @@ body {
    
 }
 
+/* Header Section Start */
 #header-section {
     position: relative;
 }
@@ -325,7 +326,7 @@ body {
       font-size: var(--fs-h4);
       font-weight: 400;
   }
-
+/* Calculate Section Start */
 
   #calculate-section{
       margin-top: 70px;
@@ -371,7 +372,7 @@ body {
   }
 
 
-
+/* Product Section Start */
   #product-section{
       margin-top: 1.5rem;
       background-color: #f3f3f3;
@@ -538,6 +539,7 @@ body {
     cursor: pointer;
   }
   
+  /* Business Section Start */
   #business-section {
       margin-top: 20px;
       background-color: #edf3ff;
@@ -608,6 +610,8 @@ body {
     margin-left: 0.7rem;
   }
 
+  /* Car Form Section Start */
+
   #car-form-section{
       margin: 2rem 0;
   }
@@ -625,7 +629,7 @@ body {
       border-right: 1.5rem solid #f05000;
       background-size: cover;
       text-align: center;
-     padding: 4rem;
+      padding: 4rem;
      
       
   }
@@ -668,8 +672,8 @@ body {
   }
 
   .car-form-list input {
-      display: inline-block;
-      border-radius: 3rem;
+    display: inline-block;
+    border-radius: 3rem;
     background: #ffffff;
     outline: none;
     border: 1px solid #ddd;
@@ -770,6 +774,7 @@ select {
     color: #f39c12;
   }
   
+  /* Footer Section Start */
 
   #footer-section {
      
@@ -792,10 +797,10 @@ select {
     color: #ffffff;
     font-weight: 700;
   }
-#footer-section button p {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-}
+    #footer-section button p {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
   .footer-section--1{
     display: grid;
     grid-template-columns:1fr 4fr;
@@ -918,10 +923,10 @@ select {
     margin:0 .3rem;
   }
   .footer-section--2 ul li:nth-child(3){
-margin-left: 0.3rem;
+    margin-left: 0.3rem;
   }
   
-
+/* Award Section Start */
 
   #award-section {
 
@@ -980,6 +985,8 @@ margin-left: 0.3rem;
       width: 50px;
       margin: 1rem;
   }
+
+  /* Event Section Start */
 
   #event-section {
       padding: 3rem;
@@ -1062,6 +1069,9 @@ margin-left: 0.3rem;
       margin-left: 1rem;
   }
 
+
+
+
 /* Advice Section CSS */
   #advice-section {
       display: grid;
@@ -1116,9 +1126,9 @@ margin-left: 0.3rem;
     grid-column-start: 2;
 
     background: #2FC8C7;
-background: -webkit-linear-gradient(right, #2FC8C7, #3E9CA4);
-background: -moz-linear-gradient(right, #2FC8C7, #3E9CA4);
-background: linear-gradient(to left, #2FC8C7, #3E9CA4);
+    background: -webkit-linear-gradient(right, #2FC8C7, #3E9CA4);
+    background: -moz-linear-gradient(right, #2FC8C7, #3E9CA4);
+    background: linear-gradient(to left, #2FC8C7, #3E9CA4);
   }
 
   .advice-section--2 h2 {
@@ -1173,9 +1183,9 @@ background: linear-gradient(to left, #2FC8C7, #3E9CA4);
      position: absolute; 
      top: 50%;
      left: 20px;
-    transform: translateY(-50%);
-    font-size: var(--fs-h1);
-    cursor: pointer;
+     transform: translateY(-50%);
+     font-size: var(--fs-h1);
+     cursor: pointer;
   }
   .prevSelectBtn:hover {
       color: var(--clr-accent);
@@ -1185,15 +1195,17 @@ background: linear-gradient(to left, #2FC8C7, #3E9CA4);
     position: absolute; 
     top: 50%;
     right: 20px;
-   transform: translateY(-50%);
-   font-size: var(--fs-h1);
-   cursor: pointer;
+    transform: translateY(-50%);
+    font-size: var(--fs-h1);
+    cursor: pointer;
  }
  .nextSelectBtn:hover {
      color: var(--clr-accent);
  }
     
- /* Family Flip Card  */
+
+
+ /* Family Flip Card CSS */
  .flip-card {
     background-color: transparent;
     width: 100%;
