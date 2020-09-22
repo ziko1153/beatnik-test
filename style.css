@@ -20,8 +20,8 @@ html {
     --clr-accent: #f7941e;
     
     --fs-h1: 3.0rem;
-    --fs-h2: 1.5rem;
-    --fs-h3: 1rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
     --fs-h4: .8rem;
     --fs-body: 0.3rem;
 }
@@ -93,6 +93,10 @@ body {
 
 .nav-list-left li {
     margin-right: 20px;
+}
+
+.nav-list-left li:hover {
+    border-bottom: 2px solid tomato;
 }
 
 
@@ -221,6 +225,7 @@ body {
   .plan-card {
       width:180px;
       margin-right: 20px;
+      cursor: pointer;
       
   }
 
@@ -250,7 +255,7 @@ body {
       background-color: #ffffff;
       width: 800px;
       position: absolute;
-      bottom: -30px;
+      bottom: -70px;
       left: 50%;
       transform: translateX(-50%);
       padding: 20px;
@@ -323,7 +328,7 @@ body {
 
 
   #calculate-section{
-      margin-top: 50px;
+      margin-top: 70px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -351,8 +356,13 @@ body {
       justify-content: center;
       align-items: center;
       padding: 30px;
- 
+      cursor: pointer;
       border-radius: 10px;
+  }
+
+  .calculate-button:hover{
+
+    transform: scale(1.2);
   }
 
   .calculate-button i {
@@ -506,11 +516,9 @@ body {
 
   .family-img {
      grid-column-start: 3;
-     background: url('img/family.png');
-     background-size: cover;
      width: 100%;
      position: relative;
-     border-radius: 18px;
+    
      
   }
 
@@ -815,6 +823,11 @@ select {
 
   .footer-2 ul li {
       margin: 1.2rem;
+      cursor: pointer;
+  }
+
+  .footer-2 ul li a:hover {
+      border-bottom: 2px solid tomato;
   }
   .footer-2__list4 {
       color: var(--clr-accent);
@@ -907,6 +920,7 @@ select {
   .footer-section--2 ul li:nth-child(3){
 margin-left: 0.3rem;
   }
+  
 
 
   #award-section {
@@ -1005,6 +1019,7 @@ margin-left: 0.3rem;
       font-size: var(--fs-h4);
       line-height: 1.2rem;
       font-weight: 400;
+      margin-left: 1rem;
   }
   .event-section__card-img {
    
@@ -1047,30 +1062,183 @@ margin-left: 0.3rem;
       margin-left: 1rem;
   }
 
+/* Advice Section CSS */
   #advice-section {
       display: grid;
       grid-template-columns: 1fr 3fr;
-      grid-template-rows: 350px;
+      grid-template-rows: auto;
       column-gap: 20px;
       padding: 3rem;
   }
 
   .advice-section--1 {
       grid-column-start: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       background: #FAB74C;
       background: -webkit-linear-gradient(top right, #FAB74C, #FE660B);
       background: -moz-linear-gradient(top right, #FAB74C, #FE660B);
       background: linear-gradient(to bottom left, #FAB74C, #FE660B);
+      padding: 1.5rem;
+  }
+
+  .advice-section--1 h2 {
+      color: #fff;
+      line-height: 2rem;
+      padding: 1.5rem;
+      font-size: var(--fs-h2);
+  }
+
+  .advice-section--1 i {
+    
+      font-size: var(--fs-h1);
+      color: #fff;
+  }
+
+  .advice-section--1 button {
+
+    margin: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
   }
 
   .advice-section--2 {
     grid-column-start: 2;
+
     background: #2FC8C7;
 background: -webkit-linear-gradient(right, #2FC8C7, #3E9CA4);
 background: -moz-linear-gradient(right, #2FC8C7, #3E9CA4);
 background: linear-gradient(to left, #2FC8C7, #3E9CA4);
   }
 
+  .advice-section--2 h2 {
+      color: #ffff;
+      font-size: var(--fs-h2);
+      margin: 2rem 0;
+      text-align: center;
+      
+  }
+
+  .advice-section--2__card {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .advice-section--2__card-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    margin: 2rem;
+  }
+
+  .advice-section--2__card-list i {
+      font-size: var(--fs-h1);
+  }
+
+  .advice-section--2__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+     
+  }
+
+  .advice-section--2__button button {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffff;
+    padding:1rem 2rem;
+    outline: none;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+
+  /* Image slider Button */
+
+  .prevSelectBtn {
+     position: absolute; 
+     top: 50%;
+     left: 20px;
+    transform: translateY(-50%);
+    font-size: var(--fs-h1);
+    cursor: pointer;
+  }
+  .prevSelectBtn:hover {
+      color: var(--clr-accent);
+  }
+   
+  .nextSelectBtn {
+    position: absolute; 
+    top: 50%;
+    right: 20px;
+   transform: translateY(-50%);
+   font-size: var(--fs-h1);
+   cursor: pointer;
+ }
+ .nextSelectBtn:hover {
+     color: var(--clr-accent);
+ }
     
-    
+ /* Family Flip Card  */
+ .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 18px;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 18px;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    background: url('img/family.png');
+    background-size: cover;
+  }
+  
+  .flip-card-back {
+    background-color: tomato;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back h1 {
+      font-size: var(--fs-h1);
+  }
   
